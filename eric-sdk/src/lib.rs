@@ -1,15 +1,13 @@
 mod certificate;
 mod config;
 mod eric;
-mod error;
 mod error_code;
 mod response;
 mod utils;
 
 pub use eric::Eric;
-pub use error::EricError;
 pub use error_code::ErrorCode;
-pub use response::EricResponse;
+pub use response::{EricResponse, ValidationOutcome};
 
 #[derive(Debug, Clone, Copy)]
 pub(crate) enum ProcessingFlag {
